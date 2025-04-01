@@ -77,7 +77,7 @@ aside{
 	position: relative;
 	place-items: center;
 	background-color: brown;
-	background-image:url(/image/banner-01.jpg) ;
+	background-image:url(./image/banner-01.jpg) ;
 	background-size: cover;
 }
 section>.content{
@@ -123,15 +123,15 @@ section>.group_btn>a>button{
 	transition: all 0.7s ease-in-out;
 }
 #slide1{
-	background-image: url(/image/banner-01.jpg);
+	background-image: url(./image/banner-01.jpg);
 	background-size: cover;
 }
 #slide2{
-	background-image: url(/image/banner-02.jpg);
+	background-image: url(./image/banner-02.jpg);
 	background-size: cover;
 }
 #slide3{
-	background-image: url(/image/banner-03.jpg);
+	background-image: url(./image/banner-03.jpg);
 	background-size: cover;
 }
 :target{
@@ -270,7 +270,7 @@ hr{
 	/* background-color: cornflowerblue; */
 	object-fit: cover;
 	background-repeat: no-repeat;
-	background-image: url(/image/video-bg.jpg);
+	background-image: url(./image/video-bg.jpg);
 	text-align: center;
 	position: relative;
 	
