@@ -1,0 +1,164 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<title>Main Page</title>
+</head>
+<body>
+			<main class="page">
+						<header>
+									<menu>
+							  <div class="logo"><h1>វីឡា</h1></div>
+									<label for="bar"  class="fa-solid fa-bars"></label>
+									<input type="checkbox" id="bar" />  	
+									<ul>
+										<li><a href="#">ទំព័រដើម</a></li>
+										<li><a href="#">គ្រឿងបរិក្ខារ</a></li>
+										<li><a href="#">ពណ៌នាបរិក្ខារ</a></li>
+										<li><a href="#">ទំនាក់ទំនង</a></li>
+										<li><a href="#"><i class="fa-solid fa-cart-arrow-down"></i> &emsp; &emsp; កំណត់ថ្ងៃ ណាត់ជួប</a></li>
+									</ul>
+									</menu>
+						</header>
+						<aside>
+						<section id="slide1" class="slidebar">
+							<div class="content">
+									<button>Toronto, <span style="color: orangered;">Canada</span></button>
+									<h2>ប្រញាប់ឡើង!
+										ទទួលបានល្អបំផុត <br>
+										វីឡាសម្រាប់អ្នក</h2>
+							</div>
+							<div class="group_btn">
+									<a href="#slide3"><button><i class="fa-solid fa-angle-left"></i></button></a>
+									<a href="#slide2"><button><i class="fa-solid fa-angle-right"></i></button></a>
+							</div>
+					</section>
+					<section id="slide2" class="slidebar">
+						<div class="content">
+								<button>Toronto, <span style="color: orangered;">Canada</span></button>
+								<h2>ប្រញាប់ឡើង!
+									ទទួលបានល្អបំផុត <br>
+									វីឡាសម្រាប់អ្នក</h2>
+						</div>
+						<div class="group_btn">
+								<a href="#slide1"><button><i class="fa-solid fa-angle-left"></i></button></a>
+								<a href="#slide3"><button><i class="fa-solid fa-angle-right"></i></button></a>
+						</div>
+				</section>
+				<section id="slide3" class="slidebar">
+					<div class="content">
+							<button>Toronto, <span style="color: orangered;">Canada</span></button>
+							<h2>ប្រញាប់ឡើង!
+								ទទួលបានល្អបំផុត <br>
+								វីឡាសម្រាប់អ្នក</h2>
+					</div>
+					<div class="group_btn">
+							<a href="#slide2"><button><i class="fa-solid fa-angle-left"></i></button></a>
+							<a href="#slide1"><button><i class="fa-solid fa-angle-right"></i></button></a>
+					</div>
+				</section>
+				</aside>
+				<section class="Best_Appartment " style="margin-top: 50px;">
+							<div class="content_Appartment_slide">
+										<img src="/image/featured.jpg" alt="">
+										<div class="featured-icon">
+											<img src="/image/featured-icon.png" alt="">
+										</div>
+							</div>
+							<div class="content_Appartment_center">
+										<h4>| លក្ខណៈពិសេស</h4>
+										<h1>ផ្ទះល្វែងល្អបំផុត
+											& ទិដ្ឋភាពសមុទ្រ</h1>
+										<div class="gruop-text">
+													<div class="group-check-box">
+														<input id="BestToggler" type="checkbox">
+														<label for="BestToggler">Best useful links ?</label> <br>
+														<div class="content-txt">Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+													</div>
+												
+													<div class="group-check-box">
+														<input id="DolorToggler" type="checkbox">
+														<label for="DolorToggler">How does this work ?</label> <br>
+														<div class="content-txt">Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+													</div>
+													<div class="group-check-box">
+														<input id="almesitToggler" type="checkbox">	
+														<label for="almesitToggler">Why is Villa Agency the best ?</label> <br>
+														<div class="content-txt">Dolor almesit amet, consectetur adipiscing elit, sed doesn't eiusmod tempor incididunt ut labore consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+													</div>	
+										</div>
+							</div>
+							<div class="content_Appartment_slide content-3">
+										<slot class=" slot">
+													<img src="/image/info-icon-01.png" alt="">
+													<div class="txt">
+														<h1>250 m2</h1>
+														<p>ទំហំផ្ទះល្វែងសរុប</p>
+													</div>
+										</slot>
+									 <center>	<hr size="1" color="gray" width="70%"></center>
+										<slot class=" slot">
+												<img src="/image/info-icon-02.png" alt="">
+												<div class="txt">
+													<h1>កិច្ចសន្យា</h1>
+													<p>កិច្ចសន្យារួចរាល់</p>
+												</div>
+										</slot>
+										<center>	<hr size="1" color="gray" width="70%"></center>
+										<slot class=" slot">
+												<img src="/image/info-icon-03.png" alt="">
+												<div class="txt">
+													<h1>ការទូទាត់</h1>
+													<p>ដំណើរការទូទាត់</p>
+												</div>
+										</slot>
+										<center>	<hr size="1" color="gray" width="70%"></center>
+										<slot class=" slot">
+												<img src="/image/info-icon-04.png" alt="">
+												<div class="txt">
+													<h1>សុវត្ថិភាព</h1>
+													<p>24/7 នៅក្រោមការគ្រប់គ្រង</p>
+												</div>
+										</slot>
+										<center>	<hr size="1" color="gray" width="70%"></center>
+						</div>
+				</section>
+				<section class="Feeling">
+								<div class="txt">
+										<h3>| រង្វាន់ ឈ្នះ 2023</h3>
+										<h2>ទទួលបានទិដ្ឋភាពកាន់តែជិត & អារម្មណ៍ផ្សេងគ្នា</h2>
+								</div>
+								<img src="/image/video-frame.jpg" alt="">
+				</section>
+				<section class="content-years">
+							<div class="content-1">
+								 <div class="left"><h1>34</h1></div>
+									<div class="rigth">
+										 <h4>អគារបានបញ្ចប់ការសាងសង់ឥឡូវនេះ</h4>
+									</div>
+									<div class="circle"></div>
+							</div>
+							<div class="content-1">
+								<div class="left"><h1>12</h1></div>
+								<div class="rigth">
+										<h4> 
+											ឆ្នាំ
+											បទពិសោធន៍</h4>
+								</div>
+								<div class="circle"></div>
+							</div>
+							<div class="content-1">
+								<div class="left"><h1>24</h1></div>
+								<div class="rigth">
+										<h4>រង្វាន់
+											ឈ្នះ 2023</h4>
+								</div>
+								<div class="circle"></div>
+							</div>
+				</section>
+					
+			</main>
+</body>
+</html>
